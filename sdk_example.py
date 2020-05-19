@@ -4,13 +4,15 @@ from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptio
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 
-authenticator = IAMAuthenticator('lfpdfmB9ops-FzNEnOL4-tgq3KtTANC6aG3sEIVPnHnM')
+#replace authenticator key below with your API key
+authenticator = IAMAuthenticator('')
 service = NaturalLanguageUnderstandingV1(
     version = '2019-07-12',
     authenticator=authenticator
 )
 
-service.set_service_url('https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/10148b27-408a-47cc-8349-5c81466afe97')
+#replace URL with URL provided by IBM interface
+service.set_service_url('')
 
 response = service.analyze(url='https://www.nationalgeographic.com/animals/mammals/d/domestic-dog/', 
     features = Features(entities=EntitiesOptions(), keywords=KeywordsOptions(), emotion=EmotionOptions(targets=['dog', 'dogs']))).get_result()
