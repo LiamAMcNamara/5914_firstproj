@@ -12,10 +12,10 @@ print("Enter a URL to assess:")
 user_url = str(input())
 
 # defining the api-endpoint - URL provided by IBM cloud
-API_ENDPOINT = "https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/e541f325-33c5-43d7-bb28-99c5a28df033/v1/analyze?version=2019-07-12"
+API_ENDPOINT = "XXXXXXXXX/v1/analyze?version=2019-07-12"
 
 # API Key - Provided by IBM cloud
-API_KEY = "Z8NuVq4FEI4qCKFx2N0xMyKk0J02trGrmRSGh7lO-9wG"
+API_KEY = "XXXXXXXXXXX"
 
 # request headers
 header = {'Content-Type': 'application/json', 'Accept': 'application/json'}
